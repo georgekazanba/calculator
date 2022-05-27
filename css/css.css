@@ -1,0 +1,14 @@
+.btn{
+    width:100%;
+    border-radius:0;
+}
+.col{padding:0;}
+.container{
+    width:25%;
+    margin-top:0.5%;
+}
+#vyvod{
+    width:100%;
+    border-radius:0;
+    /* border-color:transparent; */
+}
