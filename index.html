@@ -10,7 +10,42 @@
         <link rel="stylesheet" href="css/css.css"></link>
     </head>
     <body>
-        <form action="#">
+        <!-- Модальное окно, вызываемое при сбросе -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Заголовок модального окна</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        Вы действительно хотите сбросить очередь?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary reset" data-dismiss="modal">Да</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Модальное окно, вызываемое при NaN или Infinity -->
+        <div class="modal fade" id="zero" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Армянин-программист назвал сына Трафик.</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        На ноль себя подели.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form action="">
             <div class="d-flex flex-column align-items-center">
                 <h1>Калькулятор-примат</h1>
             </div>
@@ -18,10 +53,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <input readonly id="vyvod" class="form-control">
+                        <input readonly id="vyvod" class="form-control" type="text">
                     </div>
                 </div>
-                <!-- кнопки (0-9, операторы и =) -->
+                <!-- кнопки (0-9, операторы, '=' и 'сброс') -->
                 <div class="row">
                     <div class="col">
                         <button type="button" class="btn btn-primary"  id="1" value="1">1</button>
@@ -79,7 +114,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <button type="button" class="btn btn-danger" id="r" value="r">Сброс</button>
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" id="r" value="r">Сброс</button>
                     </div>
                 </div>
             </div>
