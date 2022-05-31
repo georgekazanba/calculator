@@ -48,73 +48,73 @@
         <form action="">
             <div class="d-flex flex-column align-items-center">
                 <h1>Калькулятор-примат</h1>
-            </div>
-            <!-- Калькулятор -->
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <input readonly id="vyvod" class="form-control" type="text">
+                <!-- Калькулятор -->
+                <div class="container d-flex flex-column align-items-center">
+                    <div class="row">
+                        <div class="col">
+                            <input readonly id="vyvod" class="form-control" type="text">
+                        </div>
                     </div>
-                </div>
-                <!-- кнопки (0-9, операторы, '=' и 'сброс') -->
-                <div class="row">
-                    <div class="col">
-                        <button type="button" class="btn btn-primary"  id="1" value="1">1</button>
+                    <!-- кнопки (0-9, операторы, '=' и 'сброс') -->
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-primary btn-sm"  id="1" value="1">1</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-primary btn-sm"  id="2" value="2">2</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-primary btn-sm"  id="3" value="3">3</button>
+                        </div>
                     </div>
-                    <div class="col">
-                        <button type="button" class="btn btn-primary"  id="2" value="2">2</button>
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-primary btn-sm"  id="4" value="4">4</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-primary btn-sm"  id="5" value="5">5</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-primary btn-sm"  id="6" value="6">6</button>
+                        </div>
                     </div>
-                    <div class="col">
-                        <button type="button" class="btn btn-primary"  id="3" value="3">3</button>
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-primary btn-sm"  id="7" value="7">7</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-primary btn-sm"  id="8" value="8">8</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-primary btn-sm"  id="9" value="9">9</button>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <button type="button" class="btn btn-primary"  id="4" value="4">4</button>
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-success btn-sm" id="+" value="+">+</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-primary btn-sm"  id="0" value="0">0</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-success btn-sm"  id="-" value="-">-</button>
+                        </div>
                     </div>
-                    <div class="col">
-                        <button type="button" class="btn btn-primary"  id="5" value="5">5</button>
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-success btn-sm"  id="*" value="*">*</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-success btn-sm" id="=" value="=" >=</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-success btn-sm" id="/" value="/">/</button>
+                        </div>
                     </div>
-                    <div class="col">
-                        <button type="button" class="btn btn-primary"  id="6" value="6">6</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <button type="button" class="btn btn-primary"  id="7" value="7">7</button>
-                    </div>
-                    <div class="col">
-                        <button type="button" class="btn btn-primary"  id="8" value="8">8</button>
-                    </div>
-                    <div class="col">
-                        <button type="button" class="btn btn-primary"  id="9" value="9">9</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <button type="button" class="btn btn-success" id="+" value="+">+</button>
-                    </div>
-                    <div class="col">
-                        <button type="button" class="btn btn-primary"  id="0" value="0">0</button>
-                    </div>
-                    <div class="col">
-                        <button type="button" class="btn btn-success"  id="-" value="-">-</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <button type="button" class="btn btn-success"  id="*" value="*">*</button>
-                    </div>
-                    <div class="col">
-                        <button type="button" class="btn btn-success" id="=" value="=" >=</button>
-                    </div>
-                    <div class="col">
-                        <button type="button" class="btn btn-success" id="/" value="/">/</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" id="r" value="r">Сброс</button>
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#exampleModal" id="r" value="r">Сброс</button>
+                        </div>
                     </div>
                 </div>
             </div>
